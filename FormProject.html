@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="pic.png" type="image/x-icon">
+    <title>UGC-NET </title>
+</head>
+
+<body>
+    <h1 style="color: blue;">UGC-NET Application Form</h1>
+    <link rel="stylesheet" href="style.css">
+    <nav>
+        <ul>
+            <li><a href="#first">Personal Details</a></li>
+            <li><a href="#middle">Permanent Address</a></li>
+            <li><a href="#midend">Academics</a></li>
+            <li><a href="#preend">DOC & City Preference</a></li>
+            <li><a href="#finalend">Payment Information</a></li>
+            <li><a href="#footer">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <form action="">
+        <div id="first">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label for="fn">First Name <b style="color: red;">*</b>:</label>
+                <input type="text" id="fn" required autofocus pattern="[a-zA-Z]+">
+                <label for="sn">Second Name:</label>
+                <input type="text" id="sn"pattern="[a-zA-Z ]+">
+                <br>
+                <br>
+                <span>Gender:</span>
+                <input type="radio" name="Male" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="Male" id="fm">
+                <label for="fm">Female</label>
+                <br>
+                <br>
+                <label for="fam">Family Name <b style="color: red;">*</b>:</label>
+                <input type="text" id="fam" required pattern="[a-zA-Z ]+">
+                <br>
+                <br>
+                <label for="dob">Data Of Birth:</label>
+                <input type="date" id="dob">
+
+                <br>
+                <br>
+                <span>Category:</span>
+                <input type="radio" name="rd" id="gen">
+                <label for="gen">GEN</label>
+                <input type="radio" name="rd" id="GEN-EWS">
+                <label for="GEN-EWS">GEN-EWS</label>
+                <input type="radio" name="rd" id="sc">
+                <label for="sc">SC</label>
+                <input type="radio" name="rd" id="st">
+                <label for="st">ST</label>
+                <br>
+                <br>
+                <label for="cn">Contact Number:</label>
+                <input type="tel" name="contact number" id="cn">
+                <label for="mail">EmailId:</label>
+                <input type="email" name="email" id="mail">
+                <br>
+                <br>
+                <button type="reset">Reset</button>
+            </fieldset>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div id="middle">
+            <fieldset>
+                <legend>
+                    Permanent Address</legend>
+                <label for="cbox">Are you a residence of Uttarakhand?(If yes)</label>
+                <input type="checkbox" id="cbox">
+                <br>
+                <br>
+                <label for="num">House Number:</label>
+                <input type="number" name="number" id="num" min="1" max="1000">
+                <label for="txt">City:</label>
+                <input type="text" name="city" id="txt"pattern="[a-zA-Z ]+">
+                <br>
+                <br>
+                <label for="st">State:</label>
+                <input type="text" name="state" id="st">
+                <label for="zipcode">PIN Code<b style="color: red;">*</b>:
+                    <input type="tel" name="zipcode" id="zipcode"pattern="[0-9]+" maxlength="6">
+
+                    <br>
+                    <label for="fad">
+                        <p>Correspondence Address<b style="color: red;">*</b>:</p>
+                    </label>
+                    <textarea name="fulladd" id="fad" cols="40" rows="5" placeholder="Enter Full Address here.."
+                        required></textarea>
+                    <br>
+                    <br>
+                    <button type="reset">Reset</button>
+
+            </fieldset>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div id="midend">
+            <fieldset>
+                <legend>Academics</legend>
+                <span>Highest Qualification:</span>
+                <select name="h" id="high">
+                    <option value="high">High School</option>
+                    <option value="inter">Intermediate</option>
+                    <option value="grad">Graduate</option>
+                    <option value="pgrade">Post Graduate</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <span>Year of Passing:</span>
+                <select name="yop" id="yop">
+
+                    <option value="yop">2017</option>
+                    <option value="yop">2018</option>
+                    <option value="yop">2019</option>
+                    <option value="yop">2020</option>
+                    <option value="yop">2021</option>
+                    <option value="yop">2022</option>
+                    <option value="yop">2023</option>
+                    <option value="yop">2024</option>
+                </select>
+                <br>
+                <br>
+                <span>CGPA:</span>
+                <input type="text" pattern="[0-9.%]+">
+
+                <br>
+                <br>
+                <label for="fl">Upload Your Resume:</label>
+                <input type="file" id="fl">
+
+
+
+            </fieldset>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div id="preend">
+            <fieldset>
+                <legend>DOC & City Preference</legend>
+                <label for="photo">Upload Photo<i>(max size:2mb):</i></label>
+                <input type="file" name="up" id="photo">
+                <label for="sign">Upload Signature<i>(max size:518kb):</i></label>
+                <input type="file" name="us" id="sign">
+                <br>
+                <br>
+                <label for="p1">Preference1:</label>
+                <select name="p1" id="p1">
+                    <option value="R">RANIKHET</option>
+                    <option value="A">ALMORA</option>
+                    <option value="H">HALDWANI</option>
+                    <option value="P">PANTNAGAR</option>
+                    <option value="D">DEHARADUN</option>
+                    <option value="H">HARIDWAR</option>
+                    <option value="C">CHAMAULI</option>
+                </select>
+                <label for="p2">Preference2:</label>
+                <select name="p2" id="p2">
+                    <option value="A">ALMORA</option>
+                    <option value="R">RANIKHET</option>
+                    <option value="H">HALDWANI</option>
+                    <option value="P">PANTNAGAR</option>
+                    <option value="D">DEHARADUN</option>
+                    <option value="H">HARIDWAR</option>
+                    <option value="C">CHAMAULI</option>
+                </select>
+                <label for="p3">Preference3:</label>
+                <select name="p3" id="p3">
+                    <option value="H">HALDWANI</option>
+                    <option value="R">RANIKHET</option>
+                    <option value="A">ALMORA</option>
+                    <option value="P">PANTNAGAR</option>
+                    <option value="D">DEHARADUN</option>
+                    <option value="H">HARIDWAR</option>
+                    <option value="C">CHAMAULI</option>
+                </select>
+            </fieldset>
+        </div>
+        <br>
+        <hr>
+        <br>
+
+        <div id="finalend">
+            <fieldset>
+                <legend>Payment Information</legend>
+                <label for="visa">Card Type:</label>
+                <select name="carddetatils" id="visa">
+                    <option value="rp">Rupay</option>
+                    <option value="visa">Visa</option>
+                    <option value="mc">Mastercard</option>
+                    <option value="cl">Contactless</option>
+                </select>
+                <br>
+                <br>
+                <label for="ch">Card Holder Name<b style="color: red;">*</b>:</label>
+                <input type="text" name="name" id="ch" required pattern="[a-zA-Z ]+">
+                <label for="cn">Card Number<b style="color: red;">*</b>:</label>
+                <input type="text" name="card" id="cn" required pattern="[0-9 ]+" maxlength="16">
+                <br>
+                <br>
+                <label for="ed">Expiration Date<b style="color: red;">*</b>:</label>
+                <input type="month" name="date" id="ed" required pattern="[0-9 /]+" >
+                <label for="cvv">CVV<b style="color: red;">*</b>:</label>
+                <input type="password" name="pswd" id="cvv" required maxlength="3">
+                <br>
+                <br>
+                <label for="ckk">
+                    <input type="checkbox" name="stment" id="ckk"required>
+
+                    <span>Note* <strong style="color: red;font-size: 13.5px;">I hereby validate that all above
+                            information regarding me is corrrect.If in case of any false statement,my form will be
+                            discarded.</strong> </span>
+                    <br>
+                    <br>
+                    <button type="submit">Validate Payment</button>
+            </fieldset>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div id="footer">
+            <fieldset>
+                <legend>FAQ</legend>
+                <details>
+                    <summary>How can I apply for UGC Exam?</summary>
+                    <p>Visit official site ugc.nta.ac.in.Fill the application form step by step.</p>
+                </details>
+                <details>
+                    <summary>What is the last date to apply for UGC Exam?</summary>
+                    <p>Last date of UGC-NET form filling is Jan 15,2024.</p>
+                </details>
+                <details>
+                    <summary>What is UGC Net Exam?</summary>
+                    <p>The subjects are Economics, Political Science, Philosophy, Psychology, Sociology, History,
+                        Anthropology, Commerce, Education, Social Work, Defence & Strategic Studies, Home Science, Public
+                        Administration, Population Studies, Music, etc. </p>
+                </details>
+                <details>
+                    <summary>Will UGC NET happen in December 2024?
+                    </summary>
+    
+                    <p>The UGC NET 2023 December session exams are set to commence on December 6, 2023, and would go on till
+                        December 14, 2023. The exam days are- December 6th, 7th, 8th and 11th, 12th, 13th, 14th, 2023. The
+                        NET exam will be conducted in 2 shifts.</p>
+                </details>
+    
+                <details>
+                    <summary>Who is eligible for net exam?
+                    </summary>
+                    <p>What is the minimum UGC NET qualification? Candidates who wish to appear for the UGC NET exam must
+                        have a master's degree or its equivalent from a recognized university with at least 55% marks.
+                        However, As per UGC NET Eligibility, the minimum percentage required for SC/ST/OBC/PwD candidates is
+                        50%.</p>
+                </details>
+    
+                <details>
+                    <summary>Can I do PhD without NET?
+                    </summary>
+                    <p>While many universities require candidates to have qualified for the NET or JRF, it is not an
+                        absolute requirement everywhere. The decision ultimately rests with the university or the department
+                        offering the PhD program.</p>
+                </details>
+          
+            </fieldset>
+            </div>
+
+
+    </form>
+</body>
+
+</html>
